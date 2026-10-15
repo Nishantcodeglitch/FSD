@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en" data-theme="paper" data-font="0">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The FSD Book — Full Stack Development from scratch</title>
+<meta name="description" content="A book-style, chapter-by-chapter course teaching Node.js, Sequelize/MySQL, React, Redux and full-stack integration from scratch, built from the CSA 301 FSD journal." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#128214;</text></svg>" />
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header id="topbar">
+    <button id="btn-toc" class="icon-btn" title="Table of contents" aria-label="Toggle table of contents">&#9776;</button>
+    <a class="brand" href="#/"><span class="brand-mark">&#128214;</span><span class="brand-name">The FSD Book</span></a>
+    <div class="topbar-right">
+      <div class="mini-progress" title="Course progress">
+        <div class="mini-progress-track"><div class="mini-progress-fill" id="top-progress-fill"></div></div>
+        <span class="mini-progress-label" id="top-progress-label">0%</span>
+      </div>
+      <button id="btn-font" class="icon-btn" title="Text size">Aa</button>
+      <button id="btn-theme" class="icon-btn" title="Theme">&#9681;</button>
+      <a class="icon-btn" href="#/course" title="Course index">&#9776;</a>
+    </div>
+  </header>
+
+  <div id="layout">
+    <noscript>
+      <div style="max-width:40rem;margin:3rem auto;padding:1.2rem;border:1px solid #ddd;border-radius:12px;font-family:Georgia,serif">
+        <h1 style="margin-top:0">JavaScript is switched off</h1>
+        <p>The FSD Book is a JavaScript reader — it needs JavaScript enabled in your browser to
+        render the chapters, quizzes and progress. Please enable it and reload the page.</p>
+      </div>
+    </noscript>
+    <nav id="sidebar" aria-label="Table of contents">
+      <div class="sidebar-search">
+        <input type="search" id="toc-search" placeholder="Search chapters…" autocomplete="off" />
+      </div>
+      <div id="toc"></div>
+      <div class="sidebar-foot">
+        <a href="#/course">Course index &amp; progress</a>
+        <a href="#/syllabus">Syllabus map</a>
+        <a href="#/about">About this book</a>
+      </div>
+    </nav>
+    <div id="scrim"></div>
+
+    <main id="main" tabindex="-1"><!-- views render here --></main>
+  </div>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <!-- ===================== course content ===================== -->
+  <script src="content/structure.js"></script>
+
+  <!-- LESSONS:BEGIN (regenerate with: node tools/build-index.js) -->
+  <script src="content/lessons/001-how-this-book-works.js"></script>
+  <script src="content/lessons/002-setup-your-environment.js"></script>
+  <script src="content/lessons/003-javascript-essentials.js"></script>
+  <script src="content/lessons/004-running-the-journal-code.js"></script>
+  <script src="content/lessons/005-what-is-node.js"></script>
+  <script src="content/lessons/006-install-and-repl.js"></script>
+  <script src="content/lessons/007-project-structure.js"></script>
+  <script src="content/lessons/008-package-json.js"></script>
+  <script src="content/lessons/009-install-express.js"></script>
+  <script src="content/lessons/010-express-server.js"></script>
+  <script src="content/lessons/011-modules-basics.js"></script>
+  <script src="content/lessons/012-module-dependencies.js"></script>
+  <script src="content/lessons/013-builtin-fs.js"></script>
+  <script src="content/lessons/014-builtin-http-path.js"></script>
+  <script src="content/lessons/015-third-party-npm.js"></script>
+  <script src="content/lessons/016-esm-vs-cjs.js"></script>
+  <script src="content/lessons/017-blocking-vs-nonblocking.js"></script>
+  <script src="content/lessons/018-event-loop.js"></script>
+  <script src="content/lessons/019-callbacks.js"></script>
+  <script src="content/lessons/020-timers.js"></script>
+  <script src="content/lessons/021-event-emitter.js"></script>
+  <script src="content/lessons/022-error-handling.js"></script>
+  <script src="content/lessons/023-promise-basics.js"></script>
+  <script src="content/lessons/024-promise-chaining.js"></script>
+  <script src="content/lessons/025-promise-errors.js"></script>
+  <script src="content/lessons/026-promises-and-fs.js"></script>
+  <script src="content/lessons/027-cli-args.js"></script>
+  <script src="content/lessons/028-fs-and-cli-capstone.js"></script>
+  <script src="content/lessons/029-writing-files.js"></script>
+  <script src="content/lessons/030-streams-pipe.js"></script>
+  <script src="content/lessons/031-standard-streams.js"></script>
+  <script src="content/lessons/032-server-and-routes.js"></script>
+  <script src="content/lessons/033-request-headers.js"></script>
+  <script src="content/lessons/034-gateway.js"></script>
+  <script src="content/lessons/035-cron-jobs.js"></script>
+  <script src="content/lessons/036-blocking-revisited.js"></script>
+  <script src="content/lessons/037-webpack.js"></script>
+  <script src="content/lessons/038-unit-1-capstone.js"></script>
+  <script src="content/lessons/039-databases-and-mysql.js"></script>
+  <script src="content/lessons/040-what-is-sequelize.js"></script>
+  <script src="content/lessons/041-connecting.js"></script>
+  <script src="content/lessons/042-testing-connection.js"></script>
+  <script src="content/lessons/043-closing-connection.js"></script>
+  <script src="content/lessons/044-what-is-a-model.js"></script>
+  <script src="content/lessons/045-attributes-validations.js"></script>
+  <script src="content/lessons/046-migrations-concept.js"></script>
+  <script src="content/lessons/047-writing-migrations.js"></script>
+  <script src="content/lessons/048-create-and-query-basics.js"></script>
+  <script src="content/lessons/049-finders.js"></script>
+  <script src="content/lessons/050-query-options.js"></script>
+  <script src="content/lessons/051-validation-constraints.js"></script>
+  <script src="content/lessons/052-raw-queries.js"></script>
+  <script src="content/lessons/053-crud-scripts.js"></script>
+  <script src="content/lessons/054-associations-overview.js"></script>
+  <script src="content/lessons/055-one-to-one-one-to-many.js"></script>
+  <script src="content/lessons/056-many-to-many.js"></script>
+  <script src="content/lessons/057-eager-loading-capstone.js"></script>
+  <script src="content/lessons/058-why-react.js"></script>
+  <script src="content/lessons/059-vite-setup.js"></script>
+  <script src="content/lessons/060-jsx.js"></script>
+  <script src="content/lessons/061-components.js"></script>
+  <script src="content/lessons/062-props.js"></script>
+  <script src="content/lessons/063-state-intro.js"></script>
+  <script src="content/lessons/064-use-state.js"></script>
+  <script src="content/lessons/065-use-reducer.js"></script>
+  <script src="content/lessons/066-use-context.js"></script>
+  <script src="content/lessons/067-use-ref.js"></script>
+  <script src="content/lessons/068-use-effect.js"></script>
+  <script src="content/lessons/069-use-memo.js"></script>
+  <script src="content/lessons/070-use-callback.js"></script>
+  <script src="content/lessons/071-router-setup.js"></script>
+  <script src="content/lessons/072-route-params.js"></script>
+  <script src="content/lessons/073-navigation.js"></script>
+  <script src="content/lessons/074-multi-page-capstone.js"></script>
+  <script src="content/lessons/075-why-redux.js"></script>
+  <script src="content/lessons/076-store-and-slices.js"></script>
+  <script src="content/lessons/077-dispatch-and-selectors.js"></script>
+  <script src="content/lessons/078-redux-capstone.js"></script>
+  <script src="content/lessons/079-fullstack-architecture.js"></script>
+  <script src="content/lessons/080-backend-api.js"></script>
+  <script src="content/lessons/081-database-schema.js"></script>
+  <script src="content/lessons/082-frontend-crud.js"></script>
+  <script src="content/lessons/083-wiring-and-proxy.js"></script>
+  <script src="content/lessons/084-run-and-debug.js"></script>
+  <script src="content/lessons/085-where-to-go-next.js"></script>
+  <!-- LESSONS:END -->
+
+  <!-- ===================== application ===================== -->
+  <script src="assets/app.js"></script>
+</body>
+</html>
